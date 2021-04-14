@@ -12,6 +12,7 @@ namespace Train_Models
         public int danger { get; set; }
         public int difficulte { get; set; }
 
+
         public Lieu(string nom, ressource ressource, int distance, int danger, int difficulte)
         {
             this.nom = nom;

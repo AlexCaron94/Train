@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Train_WPF", "Train_WPF\Train_WPF.csproj", "{FA89D33A-9F90-4248-9112-504952491B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Train_Models", "Train_Models\Train_Models.csproj", "{D5E7EAD1-9653-4774-94AD-A95BF20C5C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA89D33A-9F90-4248-9112-504952491B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA89D33A-9F90-4248-9112-504952491B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA89D33A-9F90-4248-9112-504952491B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA89D33A-9F90-4248-9112-504952491B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E7EAD1-9653-4774-94AD-A95BF20C5C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E7EAD1-9653-4774-94AD-A95BF20C5C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E7EAD1-9653-4774-94AD-A95BF20C5C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E7EAD1-9653-4774-94AD-A95BF20C5C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16BF33F1-80E0-450E-83C6-D2D9660866E3}
+	EndGlobalSection
+EndGlobal

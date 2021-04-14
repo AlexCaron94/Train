@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Train_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900" Width="800"
+        ResizeMode="NoResize">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Background.png"/>
+        </Grid.Background>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="101*" />
+            <RowDefinition Height="266*" />
+            <RowDefinition Height="67*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Image Source="/Character_Pam.png" Name="Character_Pam" MouseMove="CharacterMouseMove"/>
+            <Image Source="/Character_Xef.png" Margin="5,0,0,0" Name="Character_Xef"/>
+            <Image Source="/Character_Popy.png" Margin="5,0,0,0" Name="Character_Popy"/>
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="196" Margin="171,267,0,0" Grid.Row="1"
+               VerticalAlignment="Top" Width="206" Source="/Area_Well.png" 
+               RenderTransformOrigin="0.5,0.5" Name="Area_OilWell"
+               DragEnter="AreaDragEnter" Drop="AreaDrop">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-8.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>

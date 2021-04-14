@@ -6,4 +6,39 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Area_Well.png" />
+    <None Remove="Background.png" />
+    <None Remove="Character_Pam.png" />
+    <None Remove="Character_Popy.png" />
+    <None Remove="Character_Xef.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Train_Models\Train_Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Area_Well.png" />
+    <Resource Include="Background.png" />
+    <Resource Include="Character_Pam.png" />
+    <Resource Include="Character_Popy.png" />
+    <Resource Include="Character_Xef.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

@@ -13,27 +13,49 @@
         </Grid.Background>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="101*" />
-            <RowDefinition Height="266*" />
-            <RowDefinition Height="67*" />
+            <RowDefinition Height="103*" />
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="89*" />
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Row="2">
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,6,0,0">
             <Image Source="/Character_Pam.png" Name="Character_Pam" MouseMove="CharacterMouseMove"/>
             <Image Source="/Character_Xef.png" Margin="5,0,0,0" Name="Character_Xef"/>
             <Image Source="/Character_Popy.png" Margin="5,0,0,0" Name="Character_Popy"/>
         </StackPanel>
-        <Image HorizontalAlignment="Left" Height="196" Margin="171,267,0,0" Grid.Row="1"
-               VerticalAlignment="Top" Width="206" Source="/Area_Well.png" 
+        <Image HorizontalAlignment="Left" Height="269" Margin="61,208,0,0" Grid.Row="1"
+               VerticalAlignment="Top" Width="283" Source="/Area_Well.png" 
                RenderTransformOrigin="0.5,0.5" Name="Area_OilWell"
                DragEnter="AreaDragEnter" Drop="AreaDrop">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-8.139"/>
+                    <RotateTransform Angle="-16.049"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Image Source="/Area_Mine.png" 
+               Margin="242,210,314,40" 
+               Grid.Row="1"
+               Name="Area_MetalMine" DragEnter="AreaDragEnter"
+               Drop="AreaDrop">
+
+        </Image>
+        <Image Source="/Area_Farm.png" 
+               Margin="474,136,51,120" Grid.Row="1" 
+               RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2"
+               Name="Area_AerialFarm" DragEnter="AreaDragEnter"
+               Drop="AreaDrop">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.754"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox Grid.Row="0" Text="Coucou"/>
     </Grid>
 </Window>

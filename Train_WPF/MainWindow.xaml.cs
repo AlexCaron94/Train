@@ -26,6 +26,8 @@ namespace Train_WPF
             Character_Xef.Tag = new Personnage("Xef", 2, 2, 2, 2);
             Character_Popy.Tag = new Personnage("Popy", 2, 2, 2, 2);
             Area_OilWell.Tag = new Lieu("OilWell", ressource.gas, 2, 2, 2);
+            Area_AerialFarm.Tag = new Lieu("AerialFarm", ressource.food, 2, 2, 2);
+            Area_MetalMine.Tag = new Lieu("MetalMine", ressource.metal, 2, 2, 2);
         }
 
         //Pour drag un personnage

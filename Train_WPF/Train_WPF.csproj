@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Area_Farm.png" />
+    <None Remove="Area_Mine.png" />
     <None Remove="Area_Well.png" />
     <None Remove="Background.png" />
     <None Remove="Character_Pam.png" />
@@ -19,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Area_Farm.png" />
+    <Resource Include="Area_Mine.png" />
     <Resource Include="Area_Well.png" />
     <Resource Include="Background.png" />
     <Resource Include="Character_Pam.png" />
